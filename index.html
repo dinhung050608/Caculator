@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+    <link rel="stylesheet" href="caculator.css">
+</head>
+
+<body id="body">
+    <div id="Main_div">
+        <div id="return">
+            <div id="re_box">0</div>
+        </div>
+        <div id="container">
+
+            <div class="side_div">
+                <button onclick="clear2()" class="C" class="but">C</button>
+                <button onclick="insert('(');" class="but">(</button>
+                <button onclick="insert(')');" class="but">)</button>
+                <button onclick="insert('÷');" class="pt" class="but">÷</button>
+            </div>
+
+            <div class="side_div">
+                <button onclick=insert(7) class="but">7</button>
+                <button onclick=insert(8) class="but">8</button>
+                <button onclick=insert(9) class="but">9</button>
+                <button  onclick="insert('x');" class="pt" class="but">x</button>
+            </div>
+
+            <div class="side_div">
+                <button onclick=insert(4) class="but">4</button>
+                <button onclick=insert(5) class="but">5</button>
+                <button onclick=insert(6) class="but">6</button>
+                <button onclick="insert('-');" class="pt" class="but">-</button>
+            </div>
+
+            <div class="side_div">
+                <button onclick=insert(1) class="but">1</button>
+                <button onclick=insert(2) class="but">2</button>
+                <button onclick=insert(3) class="but">3</button>
+                <button onclick="insert('+');" class="pt" class="but">+</button>
+            </div>
+
+            <div class="side_div">
+                <button onclick=insert(0) class="but">0</button>
+                <button onclick="insert('.');" class="but">.</button>
+                <button onclick=re(3) id="equal" class="but">=</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="caculator.js"></script>
+
+</html>
